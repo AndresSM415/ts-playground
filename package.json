@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "module": "server/index.ts",
+  "type": "module",
+
+  "scripts": {
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts"
+  },
+
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.7.2",
+    "hono": "^4.8.5",
+    "zod": "^4.0.5"
+  }
+}
